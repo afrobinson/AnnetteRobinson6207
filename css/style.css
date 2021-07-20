@@ -147,16 +147,6 @@ header {
 	padding-bottom: 5px;
 }
 
-#mediaBox {
-	position: absolute;
-	top: 300px;
-	left: 30px;
-	width: 400px;
-	height: 300px;
-	line-height: 30px;
-	padding: 5px;
-	}
-
 footer {
 	position: absolute;
 	height: 20px;
