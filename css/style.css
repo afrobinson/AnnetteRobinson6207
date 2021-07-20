@@ -1,0 +1,162 @@
+﻿/*css with accordion style at the top*/
+
+button.accordion {
+    background-color: #9999d7;
+    color: #00000f;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+	font-family: "Raleway", arial, sans-serif;
+	font-size: 18px;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #7f7fcd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+@font-face {
+	font-family:"Raleway";
+	src: url('../assets/fonts/raleway/Raleway-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family:"Merriweather";
+	src: url('../assets/fonts/merriweather/Merriweather-Light.otf') format('opentype');
+}
+h1 {
+	font-family: "Raleway", arial, sans-serif;
+	color:  #00000f;
+	font-size: 32px;
+}
+h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;	
+	font-family: "Raleway", arial, sans-serif;
+	color:  #00000f;
+	font-size: 24px;
+}
+h3 {
+	font-family: "Raleway", arial, sans-serif;
+	color:  #00000f;
+	font-size: 16px;
+	text-align: center;
+}
+h4 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: "Raleway", arial, sans-serif;
+	color:  #00000f;
+	font-size: 14px;
+}
+h5 {
+	font-family: "Raleway", arial, sans-serif;
+	color:  #00000f;
+	font-size: 16px;
+}
+p {
+	font-family: "Merriweather", Helvetica, arial, sans-serif;
+	color:  #00000f;
+	font-size: 12px;
+}
+
+body {
+	background-color: #cccceb;
+}
+#container {
+	position: relative;
+	background-color: #b2b2e1;
+	height: 835px;
+	width: 1000px;
+	/*margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;*/
+	margin: 0px auto 0px auto;
+}
+header {
+	height: 40px;
+	background-color: #4e009c;
+	color: white;
+	text-align: center;
+	padding: 1px;
+}
+#banner {
+	height: 100px;
+	background-color: #333444;
+}
+#nav {
+	height: 40px;
+	background-color: #4e009c;
+	top: 5px;
+	left: 0px;
+	color: white;
+	text-align: center;
+	line-height: 2.5em;
+}
+
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		}
+		li {
+		  float: right;
+		}
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  background-color: #834cb9;
+		}
+		li a:hover:not(.active) {
+		  background-color: #004e9c;
+		}
+		.active {
+		  background-color: #00009c;
+		}
+
+#mainContent {
+	position: absolute;
+	left: 45px;
+	top: 225px;
+	width: 900px;
+	height: 400px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+footer {
+	position: absolute;
+	height: 20px;
+	width: 100%;
+	background-color: #4e009c;
+	color: white;
+	bottom: 0px;
+	font-family: arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 5px;
+}
+
